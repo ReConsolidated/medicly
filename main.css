@@ -1,0 +1,236 @@
+
+html,body{
+  height: 100%;
+}
+
+body{
+  --navBarColor: rgba(255, 255, 255, 1);
+  --primaryColor: rgb(26, 86, 153);
+  --secondaryColor: rgb(236, 250, 255);
+  --secondaryBgColor: rgba(236, 250, 255, 0.3);
+  background-color: var(--secondaryBgColor);
+  background-image: url('dna.png');
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+.main{
+  height: 95%;
+  background-image: url('team.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.primary-color{
+  color: var(--primaryColor);
+}
+.primary-color-shadow{
+  color: var(--primaryColor);
+  text-shadow:
+        0.005em 0 black,
+        0 0.009em black,
+        -0.009em 0 black,
+        0 -0.009em black,
+        -0.009em -0.009em black,
+        -0.009em 0.009em black,
+        0.009em -0.009em black,
+        0.009em 0.009em black;
+}
+
+.secondary-color{
+  color: var(--secondaryColor);
+}
+.secondary-color-shadow{
+  color: var(--secondaryColor);
+  text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
+}
+
+.secondary-bg-color{
+  background-color: var(--secondaryBgColor);
+}
+
+.container{
+  max-width: auto;
+}
+
+.my-logo{
+  height: 3rem;
+}
+
+.site-header {
+  background-color: var(--navBarColor);
+}
+.site-header a {
+  color: rgb(41, 50, 65);
+  transition: ease-in-out color .25s;
+}
+.site-header a:hover {
+  color: rgba(41, 50, 65, .35);
+  text-decoration: none;
+}
+
+
+
+.my-button {
+  border: none;
+  background-color: rgba(41, 50, 65, .86);
+  width: fit-content;
+  align-self: center;
+}
+
+
+.my-card{
+  border-color: var(--primaryColor);
+}
+
+.my-cont-black{
+  background-color: rgb(51, 50, 50);
+}
+
+.my-cont-white{
+  background-color: rgb(256,256,256);
+}
+
+.my-cont-dark{
+  background-color: rgb(94, 74, 68);
+}
+
+.my-cont-light{
+  background-color: rgb(238, 228, 225);
+}
+
+
+
+.my-image{
+  margin: left;
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 21px 21px 0 0;
+}
+
+.family-image{
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  background-image: url('happyfamily.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.family-image h3{
+  color: var(--secondaryColor);
+}
+
+.family-image span{
+  color: var(--primaryColor);
+}
+
+.family-image label{
+  margin-top: .9rem;
+  color: var(--secondaryColor);
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: .3rem;
+}
+
+.family-image form{
+  display: block;
+}
+
+.family-image input[type=text]{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  background: rgba(255,255,255,0);
+  border: 2px solid var(--secondaryColor);
+  color: #fff;
+}
+
+.family-image input:focus{
+  outline: none;
+  border: 2px solid var(--primaryColor);
+}
+
+
+.family-image textarea{
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  background: rgba(255,255,255,0);
+  border: 2px solid var(--secondaryColor);
+  color: #fff;
+}
+
+.family-image textarea:focus{
+  outline: none;
+  border: 2px solid var(--primaryColor);
+}
+
+.family-image input[type="submit"]{
+  width: 50%;
+  height: 35px;
+  color: #fff;
+  border: none;
+  background: var(--primaryColor);
+  margin-top: 2.7rem;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: .2s;
+  float: right;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+
+
+
+.my-footer{
+  background-color: white;
+  border-top: thin solid rgba(86, 87, 88, 0.1);
+}
+
+.footer-column{
+  border-right: 1px solid rgba(41, 42, 43, 0.2);
+  margin-right: 2.5rem;
+
+}
+/*
+ * Extra utilities
+ */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+
+.flex-equal > * {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
