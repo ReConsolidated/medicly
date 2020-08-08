@@ -28,15 +28,7 @@ body{
 }
 .primary-color-shadow{
   color: var(--primaryColor);
-  text-shadow:
-        0.005em 0 black,
-        0 0.009em black,
-        -0.009em 0 black,
-        0 -0.009em black,
-        -0.009em -0.009em black,
-        -0.009em 0.009em black,
-        0.009em -0.009em black,
-        0.009em 0.009em black;
+  text-shadow: white 0.05em 0.05em 0.4em;
 }
 
 .secondary-color{
@@ -187,8 +179,6 @@ body{
   border: none;
   background: var(--primaryColor);
   margin-top: 2.7rem;
-  font-family: 'PT Serif', serif;
-  font-weight: 400;
   text-transform: uppercase;
   transition: .2s;
   float: right;
